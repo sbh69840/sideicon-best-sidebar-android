@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">SideIcon</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="window_icon">Window icon</string>
+    <string name="hide">Hide</string>
+    <string name="close">Close</string>
+    <string name="corner">Corner</string>
+    <string name="maximize">Maximize</string>
+    <string name="about_page_description" translatable="false">!!FIRST APP!! on play store, very excited and want to create more and more stuffs like this which can only be possible if you guys help me making this app a hit and contributing to me in several ways. For those who want the source code of this app can hit me up on gmail and I will reply as soon as possible. DO SCROLL DOWN!!:);)$</string>
+    <string name="about_contact_us">Contact me</string>
+    <string name="about_instagram">Follow me on Instagram</string>
+    <string name="about_facebook">Like me on Facebook</string>
+    <string name="about_play_store">Rate me on the Play Store</string>
+    <string name="about_youtube">Watch me on Youtube</string>
+    <string name="about_twitter">Follow me on Twitter</string>
+    <string name="about_github">Fork me on GitHub</string>
+    <string name="about_website">Visit my website</string>
+
+
+
+
+    <!-- -
+        This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+
+    <string name="interstitial_ad_unit_id">ca-app-pub-5637466848063360/6674203939</string>
+    <string name="about">SideIcon(about)</string>
+    <string name="copy_right">Copyrights %1$d</string>
+    <string name="ad">Ad</string>
+    <string name="hey_guys_you_">Hey guys, You can help me create more apps by clicking on the ad button twice and then clicking on ad</string>
+    <string name="patreon">Be a Patreon</string>
+    <string name="loading">loading...</string>
+    <string name="add">add</string>
+    <string name="preview">preview</string>
+    <string name="apps">Apps</string>
+    <string name="icon_of_the_app">icon of the app</string>
+</resources>

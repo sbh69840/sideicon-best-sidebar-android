@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.sideicon">
+
+    <!-- Include required permissions for Google Mobile Ads to run. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION"/>
+
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+
+
+        ><activity android:name="shiv.raj.admin.sideicon.floatingfolders.FloatingFoldersLauncher" android:excludeFromRecents="true" android:label="@string/app_name" android:theme="@android:style/Theme.NoDisplay"
+        android:configChanges="orientation|screenSize|keyboardHidden" android:taskAffinity="com.example.admin.sideicon.floatingfolders.FloatingFoldersLauncher" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+
+
+
+
+        </intent-filter>
+
+
+    </activity>
+
+        <service android:name="shiv.raj.admin.sideicon.floatingfolders.FloatingFolder" />
+        <receiver android:name="shiv.raj.admin.sideicon.adapter.BootReceiver"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="shiv.raj.admin.sideicon.MainActivity1"
+            android:label="@string/about" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:icon="@drawable/about" android:taskAffinity="com.example.admin.sideicon.MainActivity1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity android:name="shiv.raj.admin.sideicon.MainActivity" android:theme="@style/AppTheme1" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"
+                    android:host="www.github.com"
+                    android:pathPrefix="/sbh69840"/>
+
+            </intent-filter>
+        <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+
+    <activity android:name="shiv.raj.admin.sideicon.FirstLaunch" android:theme="@style/Theme.Transparent"></activity>
+
+
+
+
+    </application>
+
+</manifest>

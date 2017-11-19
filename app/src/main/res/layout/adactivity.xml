@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+   >
+    <shiv.raj.admin.sideicon.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="@string/hey_guys_you_"
+        android:textColor="#000000"
+        android:textSize="45sp"
+
+        custom:customFont="fonts/minimal.otf"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/ad"
+        android:id="@+id/ad"
+        android:visibility="visible"
+        android:layout_weight="0.29"
+        android:onClick="sendMessage"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Tutorial Image"
+        android:layout_weight="0.29"
+        android:onClick="firstLaunch" />
+</LinearLayout>

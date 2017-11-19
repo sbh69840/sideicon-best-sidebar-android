@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/layout"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#40000000"
+    android:orientation="vertical">
+
+    <shiv.raj.admin.sideicon.TextViewPlus
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/apps"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:customFont="fonts/Transformers Movie.ttf"/>
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar1"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:progress="100"
+        android:max="200"
+        android:thumb="@mipmap/thumb_pressed"
+        android:thumbOffset="10dp"
+       android:saveEnabled="true"
+
+        />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </ListView>
+
+
+
+
+</LinearLayout>

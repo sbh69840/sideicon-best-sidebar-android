@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/layout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/folder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#3087ceeb"
+        android:visibility="visible" >
+
+        <shiv.raj.admin.sideicon.floatingfolders.FlowLayout
+            android:id="@+id/flow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/label"
+            android:layout_marginTop="8dp" >
+        </shiv.raj.admin.sideicon.floatingfolders.FlowLayout>
+
+        <RelativeLayout
+            android:id="@+id/label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="4dp" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="#000080" />
+
+            <ImageView
+                android:id="@+id/window_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_menu_two"
+
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/corner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" android:src="@drawable/corner"
+            android:contentDescription="@string/corner" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/preview"
+        android:visibility="gone" >
+    </ImageView>
+
+</FrameLayout>
